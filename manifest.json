@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "Bookmark Effect",
+  "version": "0.3.2",
+  "description": "Bookmark with starry effect",
+  "author": "Your name",
+  "permissions": [
+    "bookmarks",
+    "tabs"
+  ],
+  "background": {
+    "scripts": [
+      "instantclick.min.js",
+      "background.js"
+    ]
+  },
+  "content_scripts": [{
+    "matches": ["*://*/*"],
+    "css": ["content.css"],
+    "js": [
+      "instantclick.min.js",
+      "content.js"
+    ]
+  }]
+}
