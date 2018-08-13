@@ -1,9 +1,9 @@
 {
   "manifest_version": 2,
-  "name": "Bookmark Effect",
+  "name": "instant click",
   "version": "0.3.2",
-  "description": "Bookmark with starry effect",
-  "author": "Your name",
+  "description": "add instant click to all sit you've visit",
+  "author": "mkusaka",
   "permissions": [
     "bookmarks",
     "tabs"
