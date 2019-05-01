@@ -1,24 +1,15 @@
 {
   "manifest_version": 2,
   "name": "instant click",
-  "version": "0.3.2",
-  "description": "add instant click to all sit you've visit",
+  "version": "0.3.3",
+  "description": "apply instant click to all site",
   "author": "mkusaka",
   "permissions": [
-    "bookmarks",
     "tabs"
   ],
-  "background": {
-    "scripts": [
-      "instantclick.min.js",
-      "background.js"
-    ]
-  },
   "content_scripts": [{
     "matches": ["*://*/*"],
-    "css": ["content.css"],
     "js": [
-      "instantclick.min.js",
       "content.js"
     ]
   }]
