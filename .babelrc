@@ -1,0 +1,9 @@
+{
+  "presets": [
+    ["@babel/preset-env", {
+      "targets": {
+        "borwsers": ["last 2 Chrome versions"]
+      }
+    }]
+  ]
+}
