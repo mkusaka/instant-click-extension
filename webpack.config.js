@@ -2,9 +2,10 @@ const path = require('path');
 
 module.exports = () => {
   return {
-    entry: path.resolve(__dirname, 'src', 'content.js'),
+    entry: path.resolve(__dirname, 'src', 'content.ts'),
     resolve: {
       extensions: [
+        '.ts',
         '.js'
       ]
     },
@@ -15,6 +16,13 @@ module.exports = () => {
           exclude: /node_modules/,
           use: {
             loader: 'babel-loader'
+          }
+        },
+        {
+          test: /\.ts$/,
+          exclude: /node_modules/,
+          use: {
+            loader: 'ts-loader'
           }
         }
       ]
